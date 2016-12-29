@@ -9,25 +9,11 @@
   </head>
 
 <body>
-	<nav class="navbar navbar-default navbar-fixed-top">
-		<div class="container">
-			<%= link_to "KhanaKhajana", "", class: "btn btn-lg btn-success", id: "logo" %>
-			<div class="nav_item">
-				<%= link_to "link1", "", class: "btn btn-default btn-warning" %> 
-			</div>
-			<div class="nav_item">
-				<%= link_to "link1", "", class: "btn btn-default btn-warning" %> 
-			</div>
-			<div class="nav_item">
-				<%= link_to "link1", "", class: "btn btn-default btn-warning" %> 
-			</div>
-		</div>
-	</nav>
+	<%= render 'layouts/navigation' %>
 	<div class="container">
 		<%= yield %>
-		<div class="footer">
-			<p>2016-2017 &copy; KhanaKhajana</p>
-		</div>
+    
+    <%= render 'layouts/footer' %>
 	</div>
 </body>
 </html>
